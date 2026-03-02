@@ -4,9 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Website</title>
-    <link rel="stylesheet" href="style/style.css">
-    <script src="Js/script.js"></script>
+    <title>Manpreet Kaur | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 
@@ -16,7 +15,8 @@
             <div class="logo"><img src="images/mk_logo.png" alt="Logo"></div>
             <div class="menu-toggle" id="menu-toggle">&#9776;</div> <!-- Hamburger icon-->
             <ul class="nav-links" id="nav-links">
-                <div class="close-btn" id="close-btn">&times;</div> <!-- Close button for mobile -->
+                <li class="close-wrap"><button class="close-btn" id="close-btn" aria-label="Close menu">&times;</button>
+                </li>
                 <li><a href="#hero">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">My Skills</a></li>
@@ -42,6 +42,92 @@
             <img src="images/mypic.jpeg" alt="My Photo">
         </div>
     </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About</h2>
+        <p>I'm a passionate and detail-oriented Front-end Developer with a love for crafting user-friendly digital
+            experiences. With a strong foundation in HTML, CSS, and JavaScript, I specialize in building responsive,
+            accessible, and visually appealing websites. I enjoy turning complex problems into simple, elegant solutions
+            through clean design and efficient code. I thrive in collaborative environments and am always eager to learn
+            new technologies and push creative boundaries.
+        </p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <h2>My Skills</h2>
+        <div class="skills-grid_container">
+            <div class="skills-grid">
+                <div class="skill_img">
+                    <img src="images/html.png" alt="HTML">
+                </div>
+                <div class="skill_text">
+                    <p>HTML</p>
+                </div>
+            </div>
+            <div class="skills-grid">
+                <div class="skill_img">
+                    <img src="images/css3.png" alt="CSS">
+                </div>
+                <div class="skill_text">
+                    <p>CSS</p>
+                </div>
+            </div>
+            <div class="skills-grid">
+                <div class="skill_img">
+                    <img src="images/javascript.png" alt="JavaScript">
+                </div>
+                <div class="skill_text">
+                    <p>JavaScript</p>
+                </div>
+            </div>
+            <div class="skills-grid">
+                <div class="skill_img">
+                    <img src="images/jquery.jpg" alt="JQuery">
+                </div>
+                <div class="skill_text">
+                    <p>JQuery</p>
+                </div>
+            </div>
+            <div class="skills-grid">
+                <div class="skill_img">
+                    <img src="images/Csharp_Logo.png" alt="C#">
+                </div>
+                <div class="skill_text">
+                    <p>C#.NET</p>
+                </div>
+            </div>
+            <div class="skills-grid">
+                <div class="skill_img">
+                    <img src="images/php.png" alt="PHP">
+                </div>
+                <div class="skill_text">
+                    <p>PHP</p>
+                </div>
+            </div>
+            <div class="skills-grid">
+                <div class="skill_img">
+                    <img src="images/sql.png" alt="MySQL">
+                </div>
+                <div class="skill_text">
+                    <p>MySQL</p>
+                </div>
+            </div>
+            <div class="skills-grid">
+                <div class="skill_img">
+                    <img src="images/boot.png" alt="Bootstrap">
+                </div>
+                <div class="skill_text">
+                    <p>Bootstrap</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="script.js"></script>
 </body>
 
 </html>
