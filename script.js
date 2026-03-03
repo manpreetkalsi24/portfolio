@@ -15,8 +15,8 @@ function setupTheme() {
     if (!button) return;
 
     const stored = localStorage.getItem("theme");
-    const prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
-    const initial = stored || (prefersDark ? "dark" : "light");
+    // Always default to dark unless user explicitly chose a theme before.
+    const initial = stored || "dark";
     root.setAttribute("data-theme", initial);
 
     button.addEventListener("click", () => {
